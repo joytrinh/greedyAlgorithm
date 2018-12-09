@@ -25,7 +25,7 @@ namespace GreedyAlgorithm
             int count = 0;
 
             //Using while loop
-            /*                        
+                                    
             while (cents >= 25)
             {
                 count++;
@@ -46,7 +46,6 @@ namespace GreedyAlgorithm
                 count++;
                 cents = cents - 1;
             }
-            */
 
             //Using modulo math
             while (cents >= 25)
