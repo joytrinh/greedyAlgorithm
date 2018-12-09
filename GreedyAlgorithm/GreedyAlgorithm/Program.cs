@@ -27,8 +27,15 @@ namespace GreedyAlgorithm
             keep track of coins used
             print the final number of coins
             */
-            
-            
+            string value;
+            decimal number;
+            Console.WriteLine("Please give the amount in dollars to change: ");
+            value = Console.ReadLine();
+            if (decimal.TryParse(value, out number))
+                Console.WriteLine(number);
+            else
+                Console.WriteLine("Unable to parse '{0}'",value);
+
         }
     }
 }
