@@ -19,13 +19,13 @@ namespace GreedyAlgorithm
                 Console.WriteLine(number);
             else
                 Console.WriteLine("Unable to parse '{0}'",value);
-            
+
             //Convert $ to cents
             decimal cents = number * 100;
             int count = 0;
 
             //Using while loop
-                                    
+
             while (cents >= 25)
             {
                 count++;
@@ -52,10 +52,11 @@ namespace GreedyAlgorithm
             {
                 int i = (int)cents / 25;
                 count += i;
-                cents = cents - 25 * i;                 
+                cents = cents - 25 * i;
             }
             while (cents >= 10)
-            {
+            {mmd
+
                 int i = (int)cents / 10;
                 count += i;
                 cents = cents - 10 * i;
@@ -74,6 +75,6 @@ namespace GreedyAlgorithm
             }
             Console.WriteLine("The amount of coins to be returned is: " + count);
             Console.ReadLine();
-        }        
+        }
     }
 }
